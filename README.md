@@ -19,21 +19,25 @@ OpenEar 是一个自动化的 AI 新闻收集与推送系统，每天定时从 2
 - **内容：** 24 小时内最新 AI 新闻
 - **格式：** 简洁版推送 + 详细版文档
 
-### 📰 新闻来源（20 个）
+### 📰 新闻来源（65 个）
 
-**官方渠道（8 个）**
-- OpenAI, Anthropic, Google AI, Meta AI
-- 通义千问，智谱 AI, Hugging Face, Stability AI
+**AI 动态（20 个）**
+- 官方：OpenAI, Anthropic, Google AI, Meta AI, 通义千问，智谱 AI, Hugging Face, Stability AI
+- 媒体：机器之心，量子位，AI 科技评论，新智元，TechCrunch AI
+- 社区：知乎 AI 话题，Reddit r/MachineLearning, arXiv CS.AI, Papers With Code
+- 工具：GitHub Trending AI, LangChain Blog, MIT Tech Review AI
 
-**科技媒体（5 个）**
-- 机器之心，量子位，AI 科技评论，新智元，TechCrunch AI
+**AI 论文（20 个）**
+- arXiv：CS.AI, CS.LG, CS.CL, CS.CV, CS.NE
+- 平台：Papers With Code (Latest, SOTA)
+- 实验室：OpenAI Research, Google AI, Meta AI, DeepMind, Stanford HAI, MIT CSAIL, Berkeley BAIR
+- 会议/期刊：NeurIPS, ICML, ICLR, CVPR, ACL, Nature Machine Intelligence
 
-**社区/学术（4 个）**
-- 知乎 AI 话题，Reddit r/MachineLearning
-- arXiv CS.AI, Papers With Code
-
-**工具/开源（3 个）**
-- GitHub Trending AI, LangChain Blog, MIT Tech Review AI
+**AI Infra & MLSys（25 个）**
+- arXiv：CS.DC, CS.PF, CS.AR, ML Systems
+- 会议：MLSys, EuroMLSys, SOSP, OSDI, ATC, SC
+- 框架：PyTorch, TensorFlow, JAX, Hugging Face, vLLM, Ray, NVIDIA
+- 芯片：NVIDIA Research, Google TPU, Cerebras, Groq, SambaNova
 
 ### 📁 文档存档
 
@@ -54,11 +58,13 @@ OpenEar 是一个自动化的 AI 新闻收集与推送系统，每天定时从 2
 
 ### 新闻分级
 
-| 级别 | 字数 | 说明 |
-|------|------|------|
-| 重磅新闻 | 500-1000 字 | 深度分析、技术细节、行业影响 |
-| 重要新闻 | 200-500 字 | 核心亮点、技术细节、影响分析 |
-| 一般新闻 | 100-200 字 | 简要介绍、关键信息 |
+| 类别 | 级别 | 字数 | 说明 |
+|------|------|------|------|
+| AI 动态 | 重磅新闻 | 500-1000 字 | 深度分析、技术细节、行业影响 |
+| AI 动态 | 重要新闻 | 200-500 字 | 核心亮点、技术细节、影响分析 |
+| AI 动态 | 一般新闻 | 100-200 字 | 简要介绍、关键信息 |
+| 论文精选 | 所有论文 | 200-500 字 | 标题、机构、核心贡献、技术亮点、应用前景 |
+| AI Infra | 所有技术 | 200-500 字 | 技术细节、性能提升、应用场景 |
 
 ---
 
@@ -72,7 +78,8 @@ OpenEar 是一个自动化的 AI 新闻收集与推送系统，每天定时从 2
        │
        ↓
 ┌─────────────┐
-│ 新闻抓取器   │ 20 个来源 web_fetch
+│ 新闻抓取器   │ 65 个来源 web_fetch
+│             │ (AI 动态 + 论文 + AI Infra)
 └──────┬──────┘
        │
        ↓
@@ -105,43 +112,15 @@ OpenEar/
 
 ---
 
-## 🔧 配置说明
 
-### 定时任务
-
-- **工具：** OpenClaw Cron
-- **频率：** 每天 09:30
-- **命令：** `openclaw cron list` 查看
-
-### 推送配置
-
-配置文件：`/root/.openclaw/workspace/ai-news-config.json`
-
-```json
-{
-  "dingtalk": {
-    "webhook": "https://...",
-    "secret": "SEC..."
-  },
-  "wecom": {
-    "webhook": "https://...",
-    "status": "pending"
-  },
-  "storage": {
-    "path": "/root/nas/docs/vivi/OpenEar/AI/Daily",
-    "github_repo": "yanshui177/OpenEar"
-  }
-}
-```
-
----
 
 ## 📊 新闻筛选标准
 
 ### 时间要求
 
-- **优先：** 24 小时内发布的新闻
-- **备选：** 48 小时内（如新闻不足）
+- **AI 动态：** 24 小时内（不足可扩展到 48 小时）
+- **AI 论文：** 7 天内新论文
+- **AI Infra/MLSys：** 7 天内更新
 
 ### 重大新闻即时推送
 
