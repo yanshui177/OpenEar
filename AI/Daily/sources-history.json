@@ -1,6 +1,6 @@
 {
   "description": "AI 日报已推送文章来源历史记录",
-  "last_updated": "2026-03-15",
+  "last_updated": "2026-03-16",
   "sources": {
     "2026-03-14-initial": [
       "https://arxiv.org/abs/2603.12246",
@@ -133,6 +133,14 @@
       "https://developer.nvidia.com/blog/cutile-jl-brings-nvidia-cuda-tile-based-programming-to-julia/",
       "https://developer.nvidia.com/blog/category/generative-ai/",
       "https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/"
+    ],
+    "2026-03-16": [
+      "https://pytorch.org/blog/building-voice-agents-with-executorch-a-cross-platform-foundation-for-on-device-audio/",
+      "https://blog.tensorflow.org/2025/08/whats-new-in-tensorflow-2-20.html",
+      "https://arxiv.org/abs/2603.11987",
+      "https://arxiv.org/abs/2603.11974",
+      "https://arxiv.org/abs/2603.11950",
+      "https://arxiv.org/abs/2603.11938"
     ]
   }
 }
