@@ -1,6 +1,6 @@
 {
   "description": "AI 日报已推送文章来源历史记录",
-  "last_updated": "2026-03-18",
+  "last_updated": "2026-03-19",
   "sources": {
     "2026-03-17": [
       "https://arxiv.org/abs/2603.13228",
@@ -24,7 +24,6 @@
       "https://anthropic.com/news/claude-is-a-space-to-think",
       "https://anthropic.com/news/mars",
       "https://stability.ai/news/stability-ai-joins-the-tech-coalition",
-      "https://github.com/trending",
       "https://github.com/666ghj/MiroFish",
       "https://github.com/thedotmack/claude-mem",
       "https://github.com/obra/superpowers",
@@ -60,24 +59,17 @@
       "https://techcrunch.com/2026/03/13/the-biggest-ai-stories-of-the-year-so-far/",
       "https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/",
       "https://techcrunch.com/2026/03/13/spotify-will-let-you-edit-your-taste-profile-to-control-your-recommendations/",
-      "https://github.com/sponsors/explore",
-      "https://github.com/trending/developers",
       "https://github.com/volcengine/OpenViking",
       "https://github.com/anthropics/claude-plugins-official",
       "https://github.com/dimensionalOS/dimos",
       "https://github.com/p-e-w/heretic",
       "https://github.com/langflow-ai/openrag",
       "https://github.com/lightpanda-io/browser",
-      "https://github.com/sponsors/msitarzewski",
       "https://github.com/msitarzewski/agency-agents",
-      "https://pytorch.org/blog/",
       "https://pytorch.org/blog/mxfp8-training-for-moes-1-3x-training-speedup-vs-bf16-for-llama4-scout-on-gb200-cluster-using-torchao-and-torchtitan/",
       "https://pytorch.org/blog/pytorch-at-nvidia-gtc-2026/",
-      "https://docs.vllm.ai",
-      "https://developer.nvidia.com/blog/category/development/",
       "https://developer.nvidia.com/blog/tuning-flash-attention-for-peak-performance-in-nvidia-cuda-tile/",
       "https://developer.nvidia.com/blog/cutile-jl-brings-nvidia-cuda-tile-based-programming-to-julia/",
-      "https://developer.nvidia.com/blog/category/generative-ai/",
       "https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/"
     ],
     "2026-03-14-initial": [
@@ -205,8 +197,25 @@
       "https://anthropic.com/news/statement-department-of-war",
       "https://anthropic.com/news/claude-sonnet-4-6",
       "https://anthropic.com/news/claude-is-a-space-to-think",
-      "https://anthropic.com/news/mars",
-      "https://github.com/trending"
+      "https://anthropic.com/news/mars"
+    ],
+    "2026-03-19": [
+      "https://anthropic.com/news/claude-opus-4-6",
+      "https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/",
+      "https://techcrunch.com/2026/03/18/sam-altmans-thank-you-to-coders-draws-the-memes/",
+      "https://techcrunch.com/2026/03/18/nothing-ceo-carl-pei-says-smartphone-apps-will-disappear-as-ai-agents-take-their-place/",
+      "https://techcrunch.com/2026/03/18/nvidia-networking-division-building-a-multibillion-dollar-behemoth-to-rival-its-chips-business/",
+      "https://techcrunch.com/2026/03/18/patreon-ceo-calls-ai-companies-fair-use-argument-bogus-says-creators-should-be-paid/",
+      "https://techcrunch.com/2026/03/18/rebel-audio-is-a-new-ai-podcasting-tool-aimed-at-first-time-creators/",
+      "https://techcrunch.com/2026/03/18/the-gemini-powered-features-in-google-workspace-that-are-worth-using/",
+      "https://techcrunch.com/2026/03/18/this-startup-wants-to-make-enterprise-software-look-more-like-a-prompt/",
+      "https://techcrunch.com/2026/03/18/sequen-snags-16m-to-bring-tiktok-style-personalization-tech-to-any-consumer-company/",
+      "https://techcrunch.com/2026/03/18/microsoft-hires-the-team-of-sequioa-backed-ai-collaboration-platform-cove/",
+      "https://github.com/jarrodwatts/claude-hud",
+      "https://github.com/sponsors/obra",
+      "https://github.com/unslothai/unsloth",
+      "https://pytorch.org/blog/",
+      "https://developer.nvidia.com/blog/nvidia-dynamo-1-production-ready/"
     ]
   }
 }
